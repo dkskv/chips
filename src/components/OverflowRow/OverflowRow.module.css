@@ -1,0 +1,33 @@
+.row {
+  display: flex;
+  gap: var(--row-gap);
+  flex-wrap: nowrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.measureLayer {
+  position: absolute;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.item {
+  flex-shrink: 0;
+}
+
+.overlay {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  max-width: 322px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tooltipBody {
+  max-width: 350px;
+  padding: 14px;
+}

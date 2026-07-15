@@ -1,0 +1,46 @@
+.root {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  box-sizing: border-box;
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 9999px;
+  background-color: #eaeaea;
+  color: #5b5b5b;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.root[role="button"] {
+  cursor: pointer;
+}
+
+.root[role="button"]:hover:not([aria-pressed="true"]) {
+  background-color: #d1d5db;
+}
+
+.root[role="button"]:focus-visible {
+  outline: 1px solid #2563eb;
+  outline-offset: 1px;
+}
+
+.root[aria-pressed="true"] {
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.35);
+}
+
+.icon {
+  flex-shrink: 0;
+  line-height: 0;
+}
+
+.check svg {
+  width: 16px;
+  height: 16px;
+}
