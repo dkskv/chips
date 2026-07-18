@@ -10,6 +10,13 @@ const config: StorybookConfig = {
       },
     },
   },
+  async viteFinal(config, { configType }) {
+    const { mergeConfig } = await import("vite");
+
+    return mergeConfig(config, {
+      base: configType === "PRODUCTION" ? "/chips/" : "/",
+    });
+  },
 };
 
 export default config;
