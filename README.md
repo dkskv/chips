@@ -4,7 +4,7 @@
 
 ## Демо
 
-Storybook: [https://dkskv.github.io/chips/](https://dkskv.github.io/chips/)
+[Смотреть демо](https://dkskv.github.io/chips/?path=/story/ui-chipsoverflowrow--default&globals=viewport.value:desktop)
 
 Публикуется на GitHub Pages при push в `master`.
 
@@ -12,15 +12,8 @@ Storybook: [https://dkskv.github.io/chips/](https://dkskv.github.io/chips/)
 
 ```bash
 npm install
-```
-
-Демо компонентов локально:
-
-```bash
 npm run storybook
 ```
-
-Откроется [http://localhost:6006](http://localhost:6006).
 
 Тесты:
 
