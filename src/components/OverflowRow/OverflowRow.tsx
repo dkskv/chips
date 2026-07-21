@@ -162,9 +162,11 @@ function OverflowRowComponent<T extends WeakKey>({
           trigger="click"
           placement="bottomRight"
           showArrow={false}
-          classNames={{ body: styles.tooltipBody }}
           overlay={renderTooltipOverlay}
           visible={isOverflow ? undefined : false}
+          // REVIEWER: Не вижу необходимости в мемоизации здесь, но готов придерживаться командного подхода
+          classNames={{ body: styles.tooltipBody }}
+          align={{ dynamicInset: true }}
         >
           <li
             ref={overflowButtonLiRef}
